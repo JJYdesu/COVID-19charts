@@ -1,0 +1,185 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        background: whitesmoke;
+    }
+
+    header{
+       margin: auto;
+       margin-top: 100px;
+       margin-bottom: 50px;
+       font-size: 45px;
+       color: rgb(236, 50, 37);
+       border: none;
+       box-shadow: 10px 10px 10px gainsboro;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100px;
+        width: 400px;
+        border: none;
+        margin: auto;
+        margin-top: 0px;
+        background: white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px white, 
+                    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px white, 
+                    0 17px 2px -6px rgba(0, 0, 0, 0.2), 0 24px 0 -9px white, 
+                    0 25px 3px -9px rgba(0, 0, 0, 0.2);                
+    }
+    
+    .box1 {
+        display: flex;
+        height: 50px;
+        border-bottom: 1px solid gainsboro;
+    }
+    
+    .input {
+        height: 42px;
+        width: 400px;
+        margin-left: 30px;
+        border: none;
+        font-size: 20px;
+        
+    }
+    
+    .listBox {
+        min-height: 50px;
+        font-size: 20px;
+        border-bottom: 1px solid gainsboro;
+    }
+    
+    .ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .view {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 400px;
+        border-bottom: 1px solid gainsboro;
+        position: relative;
+    }
+   
+    .index {
+        margin: auto;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+    .img{
+        position: absolute;
+        opacity: 0;
+        left:6px;
+        top:4px;
+    }
+
+    .finishImg{
+        opacity: 1;
+    }
+    .unfinishImg{
+        opacity: 1;
+    }
+    .warningImg{
+        opacity: 1;
+    }
+    
+    .value {
+        margin: auto;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .tiptext{
+        opacity: 0;
+        font-size: 14px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        margin-left: 6px;
+    }
+    
+    .time{
+        margin: auto;
+        margin-right: 12px;
+        font-size: 12px;
+        font-style: italic
+        
+    }
+    .btn{
+        opacity: 0;
+        float: right;
+        outline: none;
+        padding: 0;
+        background-color: transparent;
+        border: 0px solid transparent;
+        margin: auto;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    .gou{
+        margin-left: 10px;
+    }
+    
+    .view:hover .btn{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .view:hover .tiptext{
+        opacity: 0.5;
+    }
+    
+    .toolBar {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+    }
+    
+    .statistics {
+        margin: auto;
+        margin-left: 20px;
+    }
+    
+    .clearAll {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: auto;
+        margin-right: 20px;
+        float: right;
+    }
+    
+    .clearAll:hover {
+        cursor: pointer;
+    }
+
+    .li:nth-child(4n+1){
+        background-color: #ffdddd;
+        border-left: 6px solid #f44336;
+    }
+
+    .li:nth-child(4n+2){
+        background-color: #ddffdd;
+        border-left: 6px solid #4CAF50;
+    }
+    
+    .li:nth-child(4n+3){
+        background-color: #e7f3fe;
+        border-left: 6px solid #2196F3;
+    }
+    
+    .li:nth-child(4n+4){
+        background-color: #ffffcc;
+        border-left: 6px solid #ffeb3b;
+    }
+
