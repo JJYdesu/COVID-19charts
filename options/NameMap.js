@@ -63,7 +63,7 @@ export default  {
   Georgia: "佐治亚州",
   Ghana: "加纳",
   Greece: "希腊",
-  Greenland: "格陵兰",
+  Greenland: "格陵兰岛",
   Guatemala: "危地马拉",
   Guinea: "几内亚",
   "Guinea-Bissau": "几内亚比绍",

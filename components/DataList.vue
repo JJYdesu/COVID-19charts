@@ -1,6 +1,5 @@
 <template>
   <div class="total">
-    <div class="global"></div>
     <div class="list-head">
       <div>国家</div>
       <div>确诊</div>
@@ -62,7 +61,7 @@ export default {
 }
 .list-box {
   overflow-y: auto;
-  height: 75%;
+  height: 100%;
 }
 
 .indexes li {
