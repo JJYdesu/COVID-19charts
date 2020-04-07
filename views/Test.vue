@@ -1,9 +1,19 @@
 <template>
   <div class="banner">
     <div class="item">
-      <img v-show="currentIndex===i" v-for="(item,i) in dataList" :key="item.id" :src="item"/>
+      <img
+        v-show="currentIndex === i"
+        v-for="(item, i) in dataList"
+        :key="item.id"
+        :src="item"
+      />
       <ul class="indexes">
-        <li @click="gotoNext(i)" v-for="(item,i) in dataList" :key="item.id" :class="{active:i===currentIndex}"></li>
+        <li
+          @click="gotoNext(i)"
+          v-for="(item, i) in dataList"
+          :key="item.id"
+          :class="{ active: i === currentIndex }"
+        ></li>
       </ul>
     </div>
   </div>
@@ -16,24 +26,23 @@ export default {
       dataList: [
         'https://i1.mifile.cn/a4/xmad_15535933141925_ulkYv.jpg',
         'https://i1.mifile.cn/a4/xmad_15532384207972_iJXSx.jpg',
-        'https://i1.mifile.cn/a4/xmad_15517939170939_oiXCK.jpg'
+        'https://i1.mifile.cn/a4/xmad_15517939170939_oiXCK.jpg',
       ],
       currentIndex: 1, //默认显示图片
-      timer: null //定时器
+      timer: null, //定时器
     }
   },
   mounted() {
     // setInterval(()=>{
     //   ++this.currentIndex
-    //   if(this.currentIndex>this.dataList.length-1) this.currentIndex=0   
+    //   if(this.currentIndex>this.dataList.length-1) this.currentIndex=0
     // },1000)
   },
   methods: {
-    gotoNext(i){
+    gotoNext(i) {
       this.currentIndex = i
-    }
+    },
   },
-  
 }
 </script>
 
@@ -65,7 +74,7 @@ export default {
   background: #fff;
   margin: 0px 5px;
 }
-.indexes li:hover{
+.indexes li:hover {
   cursor: pointer;
 }
 .indexes li.active {

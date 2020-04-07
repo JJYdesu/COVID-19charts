@@ -60,7 +60,9 @@ export default {
         return {name:item.area,value:item.confirmed}
       })
       option.series.data = totalData
+      
       myChart.setOption(option);
+      window.onresize = myChart.resize;
     }
   }
 };
