@@ -18,8 +18,6 @@ export default {
     this.total()
     this.mortalit()
     this.cured()
-    
-    
   },
   methods: {
     total() {

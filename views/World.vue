@@ -22,9 +22,9 @@ let option = {
     show: true,
     left:'20%',
     pieces: [
-      { min:10000},
-      { min: 5000, max:9999}, // 不指定 max，表示 max 为无限大（Infinity）。
-      { min: 1000, max: 4999 },
+      { min:50000},
+      { min: 10000, max:49999}, // 不指定 max，表示 max 为无限大（Infinity）。
+      { min: 1000, max: 9999 },
       { min: 100, max: 999 },
       { min: 10, max: 99 },
       { min: 1, max: 9 }, // 不指定 min，表示 min 为无限大（-Infinity）。
@@ -55,7 +55,7 @@ export default {
       let data = JSON.parse(sessionStorage.getItem("totalData"));
       // data = data.World;
       data = data.EachCountryList
- 
+      console.log(data)
       let totalData = data.map(item=>{
         return {name:item.area,value:item.confirmed}
       })

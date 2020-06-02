@@ -32,7 +32,7 @@ let option3= {
 //折线图数据
 let option1= {
     title: {
-        text: '重点地区疫情趋势图',
+        text: '',
       },
       tooltip: {
         trigger: 'axis',

@@ -18,13 +18,13 @@ export default {
         let data = madeData[0];
         console.log(data)
         let totalData = {
-          EachCountryList:data.caseOutsideList,
-          China:data.caseList,
-          World:data.globalList,
-          foreignTrend:data.foreignTrendList,
-          ChinaTrend:data.trend,
-          ChinaSummary:data.summaryDataIn,
-          ForeignSummary:data.summaryDataOut,
+          EachCountryList:data.caseOutsideList, //1
+          China:data.caseList,  //1
+          World:data.globalList,//1
+          foreignTrend:data.allForeignTrend,
+          ChinaTrend:data.trend,//1
+          ChinaSummary:data.summaryDataIn,//1
+          ForeignSummary:data.summaryDataOut,//1
         }  
         sessionStorage.setItem('totalData',JSON.stringify(totalData))
       })
